@@ -6,7 +6,6 @@ client = mongo_client.MongoClient(settings.DATABASE_URL)
 
 db = client[settings.MONGO_INITDB_DATABASE]
 User = db.users
-Post = db.posts
 ResetTokensCollection = db.reset_tokens_collection
 
 
